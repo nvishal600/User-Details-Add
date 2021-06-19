@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif TC', serif;
+}
+.container{
+    display: flex;
+}
+header{
+    border-right: 1px solid rgb(163, 158, 158);
+    width: 70px;
+    position: relative;
+    background-color: rgb(245, 237, 237);
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+header ul li:nth-of-type(1)
+{
+    height: 70px;
+    line-height: 70px;
+    background-color: #21ABB0;
+    
+}
+header ul li a .fa-bars{
+    color: white;
+}
+header ul li a{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(51, 47, 47);
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.head{
+   
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgb(163, 158, 158);
+    display: flex;
+    justify-content: space-between;
+}
+.head .logo{
+    width: 200px;
+    margin-left: 10px;
+}
+.head .logo img{
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+}
+.head .user{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head .user .userName{
+    text-align: right;
+    color: rgb(63, 61, 61);
+}
+.head .user .userIcon{
+    
+    border: 2px solid rgb(97, 94, 94);
+    font-size: 20px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    
+    border-radius: 50%;
+}
+.head .user .userIcon a{
+    color: rgb(32, 31, 31);
+}
+.users{
+    padding: 25px 50px;
+    margin-bottom: 80px;
+}
+.active.search{
+    width: 200px;
+}
+.search{
+    margin-top:20px ;
+    border: 2px solid black;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    transition: .5s;
+}
+.search .icon{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: relative;
+cursor: pointer;
+overflow: hidden;
+z-index: 100;
+}
+.search .icon::before{
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.search .icon::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 2px;
+    height: 8px;
+    transform: rotate(-41deg);
+   background-color:  rgb(0, 0, 0);
+   
+}
+.search .input{
+  width: 70%;
+    position: absolute;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    z-index: -100;
+   
+}
+.search .input input{
+    font-size: 16px;
+    padding: 8px 2px;
+    border: transparent;
+    outline: none;
+}
+
+.usersTable{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+table td,th{
+    padding: 15px;
+}
+table th{
+    text-align: left;
+    background-color: lightgray;
+}
+table th:nth-of-type(3)
+{
+    text-align: center;
+}
+table tr td:nth-of-type(3)
+{
+    text-align: center;
+    
+}
+table tr td a{
+    color: rgb(32, 31, 31);
+}
+.newUser{
+    padding: 10px 50px;
+    display: flex;
+}
+.newUser .userDetails{
+    width: 70%;
+    height: 100%;
+}
+.newUser .profile{
+    width: 30%;
+    height: 100%;
+}
+.newUser .userDetails h2{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+form input{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    padding-left: 15px;
+}
+form input:nth-of-type(1)
+{
+    margin-right: 8%;
+    
+}
+form input:nth-of-type(3)
+{
+    margin-right: 8%;
+    margin-bottom: 20px;
+}
+form select:nth-of-type(1)
+{
+    font-size: 20px;
+    padding: 5px;
+    width: 35%;
+    margin-bottom: 15px;
+}
+form label:nth-of-type(1)
+{
+font-size: 20px;
+}
+form input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 86px;
+    
+}
+form input[type="submit"]
+{display: inline;
+    width: 25%;
+    margin: 10px 0;
+    background-color: #21ABB0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #21ABB0;
+}
+
+#cancel{
+    display: inline;
+    font-size: 20px;
+    padding: 8px;
+    width: 25%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(199, 194, 194);
+}
+
+
+
+
+
+
+
+.profile h2{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.profile{
+    width: 100%;
+    position: relative;
+  }
+  .profile .wrapper{
+    position: relative;
+    height: 230px;
+    width: 70%;
+    background: #fff;
+    border: 1px solid #c2cdda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+ 
+  .wrapper .image{
+    position: absolute;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    margin-top: 10px;
+  }
+
+  .wrapper img{
+    
+    height: 131%;
+    width: 153%;
+    object-fit: cover;
+  }
+  .wrapper .icon{
+    font-size: 100px;
+  }
+ 
+  
+  
+  
+  
+  .profile #custom-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 70%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+    background-color: rgb(163, 162, 162);
+    color: black;
+  }
+#myform{
+    position: relative;
+}
+  #usernameError{
+      position: absolute;
+      left: 0;
+      top: 15%;
+      color: red;
+  }
+  #emailError{
+    position: absolute;
+    right: 36%;
+    top: 15%;
+    color: red;
+}
+#firstError{
+    position: absolute;
+    left: 0;
+    top: 31%;
+    color: red;
+}
+#lastError{
+    position: absolute;
+    right: 33%;
+    top: 31%;
+    color: red;
+}
+#roleError{
+    position: absolute;
+    left: 0;
+    bottom: 49%;
+    color: red;
+}
+#successMsg{
+color: rgb(0, 165, 0);
+margin-bottom: 40px;
+visibility: hidden;
+}

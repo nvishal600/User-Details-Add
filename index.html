@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>embold</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user-friends"></i></a></li>
+                    <li><a href="#"> <i class="fas fa-cog"></i></a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div class="head">
+                <div class="logo">
+                    <img src="https://embold.io/wp-content/uploads/2021/02/Logo-Embold-Small.svg" width="100%"
+                        height="100%" alt="icon">
+                </div>
+                <div class="user">
+                    <div class="userName">
+                        <p>RENEE MCKELVEY</p>
+                        <p>Account Settings</p>
+                    </div>
+                    <div class="userIcon">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="users">
+                <h2>User list</h2>
+                <div class="search active">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="Search">
+                    </div>
+
+                </div>
+                <div class="usersTable">
+                    <table id="userTable" border="1" cellspacing=0>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                       
+                        <tbody class=".scrollit">
+                            <tr>
+                                <td>Ada Loveance</td>
+                                <td>Admin</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Grace Hopper</td>
+                                <td>Developer</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Margarel Hamilton</td>
+                                <td>QA</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Joan Loveance</td>
+                                <td>Manager</td>
+                                <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="newUser">
+                <div class="userDetails">
+                    <h2>New User Details</h2>
+                    <form action="" id="myform">
+                        <input type="text" id="userName" placeholder="Username">
+                        <small id="usernameError"></small>
+                        <input type="email" id="email" placeholder="Email">
+                        <small id="emailError"></small>
+                        <br>
+                        <input type="text" id="fname" placeholder="First Name">
+                        <small id="firstError"></small>
+                        <input type="text" id="lname" placeholder="Last Name">
+                        <small id="lastError"></small>
+                        <br>
+                        <select name="" id="role">
+                            <option value="role" selected disabled>Role</option>
+                            <option value="developer">Developer</option>
+                            <option value="qa">QA</option>
+                            <option value="admin">Admin</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                        <small id="roleError"></small>
+                        <br>
+                        <input type="checkbox" checked name="" id="sendEmail">
+                        <label for="sendEmail">Send Email Confirmation</label>
+                        
+                        
+                        <hr>
+                        <input type="submit" id="storeData" value="Add User">
+                        <input type="button" value="Cancel" id="cancel">
+                       
+                    </form>
+                </div>
+                <div class="profile">
+                    <h2>Profile Picture</h2>
+                    <div class="wrapper">
+                        <div class="image">
+                            <img id="profilePicture" width="100%" height="100%" src="" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-user-alt"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <button onclick="defaultBtnActive()" id="custom-btn">Select Image</button>
+                    <input id="default-btn" type="file" hidden>
+                    <hr>
+                </div>
+              
+            </div>
+        
+        </main>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
